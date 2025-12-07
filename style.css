@@ -112,6 +112,16 @@ body{
 .main_right{
     display: flex;
     flex-direction: column;
+    margin-left: 150px;
+}
+
+.iphone{
+    z-index: 10;
+}
+
+.ellipse{
+    position: absolute;
+    z-index: 5;
 }
 
 .ellipse_blue{
@@ -138,15 +148,20 @@ body{
     .main_left{
         margin-bottom: 9.2593vh;
     }
+    .main_right{
+        margin-left: 0;
+    }
 }
 /* ===============INSTALL============*/
 .container_install{
-    border: 1px solid black;
-    border-radius: 25px;
-    background-color: #E5E2DD;
+
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #e5e4df;
     margin-top: 50px;
-    box-shadow: 5px 5px 2px rgb(102, 99, 99);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
     z-index: 100;
+    overflow: hidden;
 }
 
 .container_install p{
@@ -163,13 +178,19 @@ body{
     width: 100%;
 }
 
-.container_install_header{
-    background-color: #fff;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    box-shadow: 0px 2px 2px rgb(102, 99, 99);
+.container_install_header {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+
+    
+    background-color: #f0f0f0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     z-index: 100;
     margin-bottom: 0.9259vh;
+    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.15);
+    position: relative; 
 }
 
 .install_left{
@@ -201,21 +222,34 @@ button{
     font-weight: 400;
 }
 
-.container_install_main{
-    margin-top: 20px;
+.container_install_main {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between; 
 }
 
 .container_install_main_left{
-    background-color: #fff;
-    border-top-right-radius: 25px;
-    padding-right: 10px;
+    width:50%;
+    background-color:#f0f0f0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 0px;
+    text-align: center;
+}
+
+.container_install_main_right {
+    width: 50%;
+    background-color: #e5e4df; 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0px;
+
+    text-align: center;
 }
 
 .container_install_bottom{
     height: 18.8296vh;
-    background-color: #fff;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+    background-color: #f0f0f0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .link{
@@ -227,10 +261,10 @@ button{
     text-decoration: none;
     margin: auto;
     color: #111827;
-    border: 1px solid black;
-    border-radius: 25px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 15px;
     padding: 1.3889vh 3.6458vw;
-    background-color: #f4debb;
+    background-color: #fad394;
     transition: background-color 0.8s ease-in-out;
 }
 
@@ -239,7 +273,7 @@ button{
 }
 
 .link_a:hover{
-    background-color: #efb455;
+    background-color: #feb846;
     transition: background-color 1s ease-in-out;
 }
 
