@@ -18,6 +18,15 @@ body{
 }
 
 /*===============HEADER================*/
+.header_position{
+    position: fixed;
+    top: 0;
+    height: 100px;
+    z-index: 1000;
+    background-color: #E5E2DD;
+    box-shadow:0 3px 10px 0 rgba(0, 0, 0, 0.15);
+    width: 100%;
+}
 
 .header_content{
     display: flex;
@@ -80,6 +89,8 @@ body{
 
 .main_content{
     display: flex;
+    scroll-margin-top: 150px;
+    margin-top: 150px;
 }
 
 .main_left{
