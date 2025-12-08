@@ -1,0 +1,69 @@
+
+@keyframes fadein-1 {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadein-2 {
+    0% { opacity: 0; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes fadein-3 {
+    0% { opacity: 0; }
+    66% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes fadein-4 {
+    0% { opacity: 0; }
+    75% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes navbar-enter {
+    0% {
+        transform: translateY(-100%);
+    }
+    50% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.fade-in-1 {
+    animation-name: fadein-1;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+}
+.fade-in-2 {
+    animation-name: fadein-2;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
+.fade-in-3 {
+    animation-name: fadein-3;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+}
+.fade-in-4 {
+    animation-name: fadein-4;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+.enter-from-top {
+    animation-name: navbar-enter;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    .fade-in-1, .fade-in-2, .fade-in-3, .fade-in-4, .enter-from-top, .animated {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+.animated {
+    transition: all 0.5s ease;
+}
