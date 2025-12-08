@@ -277,6 +277,7 @@ button{
     padding: 1.3889vh 3.6458vw;
     background-color: #fad394;
     transition: background-color 0.8s ease-in-out;
+    transition: transform 0.8s ease-in-out;
 }
 
 .linkTg{
@@ -285,7 +286,7 @@ button{
 
 .link_a:hover{
     background-color: #feb846;
-    transition: background-color 1s ease-in-out;
+    transform: scale(1.25);
 }
 
 /*==========FOOTER===========*/
