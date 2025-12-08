@@ -170,7 +170,7 @@ body{
     border-radius: 10px;
     background-color: #e5e4df;
     margin-top: 50px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
     z-index: 100;
     overflow: hidden;
 }
