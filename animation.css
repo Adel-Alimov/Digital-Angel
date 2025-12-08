@@ -21,10 +21,47 @@
 }
 @keyframes navbar-enter {
     0% {
-        transform: translateY(-100%);
+        transform: translateY(-200%);
     }
     50% {
         transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes navbar-left {
+    0% {
+        transform: translateX(-200%);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes navbar-right {
+    0% {
+        transform: translateX(300%);
+    }
+    50% {
+        transform: translateX(150%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes navbar-bottom {
+    0% {
+        transform: translateY(300%);
+    }
+    50% {
+        transform: translateY(150%);
     }
     100% {
         transform: translateY(0);
@@ -54,7 +91,22 @@
 .enter-from-top {
     animation-name: navbar-enter;
     animation-duration: 1s;
-    animation-timing-function: ease-in;
+    animation-timing-function: linear;
+}
+.enter-from-left {
+    animation-name: navbar-left;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+.enter-from-right {
+    animation-name: navbar-right;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+.enter-from-bottom {
+    animation-name: navbar-bottom;
+    animation-duration: 1s;
+    animation-timing-function: linear;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
